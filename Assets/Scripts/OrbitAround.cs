@@ -20,6 +20,6 @@ public class OrbitAround : MonoBehaviour
   
     void Update()
     {
-        transform.RotateAround(target.transform.position, target.transform.up, speed * Time.deltaTime);
+        transform.RotateAround(target.transform.position, target.transform.up, speed * Time.deltaTime * HUDController.timeScale);
     }
 }
